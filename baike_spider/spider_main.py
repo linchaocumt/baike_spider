@@ -1,3 +1,4 @@
+# coding=utf-8
 '''
 Created on 2016-4-6
 
@@ -37,6 +38,8 @@ class SpiderMain(object):
 
 
 if __name__=="__main__":
-    root_url = "http://baike.baidu.com/view/21087.htm"
-    obj_spider = SpiderMain()
-    obj_spider.craw(root_url)
+    # root_url = "http://baike.baidu.com/view/21087.htm"
+    # obj_spider = SpiderMain()
+    # obj_spider.craw(root_url)
+    root_url = raw_input("Root URL: ")
+    SpiderMain().craw(root_url)
